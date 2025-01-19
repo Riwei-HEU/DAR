@@ -175,9 +175,7 @@ class LightGCN(nn.Module):
         neg_e = self.pooling(neg_gcn_embs.view(-1, neg_gcn_embs.shape[2], neg_gcn_embs.shape[3])).view(batch_size, self.K, -1)
         
         if weights is not None:
-            weights = torch.clamp(weights, max=1.0)
-            dims = torch.clamp((weights * self.emb_size).to(torch.long), min=1)
-
+            dims = (weights * self.emb_size).to(torch.long)
             index = torch.arange(self.emb_size, device=self.device).unsqueeze(0).expand(batch_size, -1)
             mask = index < dims.unsqueeze(1)
 
