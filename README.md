@@ -2,6 +2,8 @@
 
 PyTorch Implementation for DAR: Dimension-Adaptive Recommendation with Multi-Granular Noise Control
 
+--- Based on "MixGCF: An Improved Training Method for Graph Neural Network-based Recommender Systems", https://github.com/huangtinglin/MixGCF
+
 
 #### Environment Requirement
 
