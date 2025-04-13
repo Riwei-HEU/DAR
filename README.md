@@ -1,4 +1,4 @@
-# DAR: Dimension-Adaptive Recommendation with Multi-Granular Noise Control
+# DAR: Dimension-Adaptive Recommendation with Multi-Granular Noise Control, SIGIR 2025
 
 PyTorch Implementation for DAR: Dimension-Adaptive Recommendation with Multi-Granular Noise Control
 
